@@ -1,0 +1,300 @@
+/* ======================================================
+   SEÇÃO SERVIÇOS – TÍTULO PREMIUM
+====================================================== */
+.services {
+    padding: 7rem 1.5rem 4rem;
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+.feedback-subtitle {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem; /* cria respiro antes da imagem */
+  text-align: center;
+}
+
+.services-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.3rem, 5vw, 3.4rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 0rem; /* 🔥 aproximou a linha */
+    opacity: 0;
+
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.services-divider {
+    width: 90px;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--color-accent),
+        transparent
+    );
+    opacity: 0;
+
+    animation: fadeUp 0.8s ease forwards;
+    animation-delay: 0.25s;
+}
+
+/* ======================================================
+   SEÇÃO PROCEDIMENTOS – ANIMAÇÃO DE ENTRADA
+====================================================== */
+.procedures {
+    padding: 1rem 1.5rem; /* bloco subido */
+    background: linear-gradient(180deg, #ffffff, #FFFFFF);
+}
+
+.procedures-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+
+    align-items: start;
+}
+
+/* ======================================================
+   FEEDBACK SUBTITLE 
+====================================================== */
+
+.feedback-subtitle {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+
+/* ======================================================
+   TESTIMONIAL QUOTE – TEXTO CENTRALIZADO
+====================================================== */
+.testimonials-quote {
+    text-align: center;
+    margin: 100rem 1.5rem 6rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials-quote h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    color: #2E2433;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+
+/* ======================================================
+   TESTIMONIAL QUOTE – IMAGEM RESPONSIVA
+====================================================== */
+.testimonials-quote {
+    text-align: center;
+    margin: 4rem 1.5rem 6rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials-quote h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    color: #2E2433;
+    margin-bottom: 1.5rem; /* espaço entre texto e imagem */
+    position: relative;
+}
+
+/* IMAGEM RESPONSIVA */
+.testimonial-image {
+    width: 100%;
+    max-width: 1085px;  /* desktop */
+    height: auto;
+    border-radius: 12px; /* opcional, deixa bordas arredondadas */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* opcional, efeito leve */
+}
+
+
+/* =========================
+   QUEM SOMOS - CARD
+========================= */
+
+.about-us {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.about-card {
+  width: 1312px;
+  max-width: 95%;
+  height: 707px;
+  max-height: 95vh;
+  background-color: #F3E8EE;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  padding: 2rem 4rem;
+  gap: 4rem;
+}
+
+.about-person {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1000px;
+}
+
+.about-photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  transition: opacity 0.5s ease;
+}
+
+.about-text {
+  text-align: left;
+  max-width: 600px;
+  font-family: 'Playfair Display', serif;
+  transition: opacity 0.5s ease;
+}
+
+.about-text h3 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.location-section {
+  background-color: #D9D9D9;
+  padding: 6rem 2rem 3rem;
+  font-family: 'Playfair Display', serif;
+  overflow: hidden;
+}
+
+.location-container {
+  max-width: 1312px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: center;
+  padding-bottom: clamp(4rem, 8vw, 6rem);
+}
+
+/* Título */
+.location-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.location-title::after {
+  content: "";
+  width: 75%;
+  height: 2px;
+  background-color: #E493FF;
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+}
+
+/* Texto */
+.location-address {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+}
+
+/* Ícones */
+.location-socials {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.location-socials a {
+  font-size: 1.8rem;
+  color: #000;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.location-socials a:hover {
+  transform: scale(1.15);
+  color: #E493FF;
+}
+
+.location-name {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+.location-footer {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+
+
+/* Mapa */
+.map-wrapper {
+  border-top: 2px solid #E493FF;
+  border-bottom: 2px solid #E493FF;
+  padding: 1rem 0;
+  border-radius: 16px;
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 320px;
+  border: none;
+  border-radius: 16px;
+}
+
+
+
+.location-footer {
+  padding: 1.5rem 1.5rem 2rem;
+  text-align: center;
+
+  font-family: var(--font-primary);
+  font-size: clamp(0.75rem, 2vw, 0.85rem);
+  line-height: 1.6;
+
+  margin: 0;
+}
+

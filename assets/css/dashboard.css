@@ -1,0 +1,111 @@
+/* ======================================================
+   DASHBOARD - ESTILO
+====================================================== */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FAF8FC;
+    margin: 20px;
+    color: #333;
+}
+
+h1, h2 {
+    color: #E493FF;
+}
+
+form {
+    margin-bottom: 30px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(228, 147, 255, 0.2);
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+input, select {
+    padding: 8px;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #E493FF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #d77ae0;
+}
+
+#msg {
+    margin-top: 10px;
+    font-weight: bold;
+    color: green;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(228, 147, 255, 0.2);
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+th {
+    background-color: #E493FF;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+/* Botão moderno de voltar */
+.back-arrow {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px; /* espaço entre a seta e o texto */
+    padding: 10px 16px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #E493FF; /* cor roxa do tema */
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: all 0.25s ease;
+    z-index: 1000;
+}
+
+/* Efeito hover */
+.back-arrow:hover {
+    background-color: #D77BE0; /* roxo um pouco mais escuro */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+}

@@ -1,0 +1,41 @@
+/* ======================================================
+   DESIGN TOKENS
+====================================================== */
+:root {
+    --color-white: #ffffff;
+    --color-accent: #E493FF;
+    --color-overlay: rgba(0, 0, 0, 0.45);
+    --color-nav-mobile: rgba(0, 0, 0, 0.35);
+
+    --font-primary: 'Inter', sans-serif;
+    --font-display: 'Playfair Display', serif;
+
+    --fs-h1: clamp(2.2rem, 4vw, 3.4rem);
+    --fs-h2: clamp(1.1rem, 2vw, 1.5rem);
+    --fs-small: clamp(0.75rem, 1.5vw, 0.9rem);
+
+    --space-xs: 8px;
+    --space-sm: 16px;
+    --space-md: 24px;
+    --space-lg: 40px;
+    --space-xl: 64px;
+
+    --container-width: 1280px;
+    --content-width: 960px;
+}
+
+/* ======================================================
+   RESET
+====================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ======================================================
+   BLOQUEIO DE SCROLL
+====================================================== */
+body.menu-open {
+    overflow: hidden;
+}

@@ -1,0 +1,292 @@
+/* ======================================================
+   BOTÃO WHATSAPP
+====================================================== */
+.btn-whatsapp {
+    margin-top: var(--space-lg);
+    padding: 14px 32px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-white);
+    background: #BF00FF;
+    border-radius: 999px;
+    text-decoration: none;
+    opacity: 0;
+    animation: fadeInSoft 1.4s ease forwards;
+    animation-delay: 1.4s;
+    transition: all 0.3s ease; /* adiciona transição suave para hover */
+}
+
+/* Hover mais chamativo */
+.btn-whatsapp:hover {
+    transform: translateY(-3px) scale(1.05); /* levanta e dá leve zoom */
+    background: linear-gradient(45deg, #BF00FF, #FF00FF); /* gradiente vibrante */
+    box-shadow: 0 8px 20px rgba(191, 0, 255, 0.4); /* sombra colorida */
+}
+
+/* Foco acessível */
+.btn-whatsapp:focus-visible {
+    outline: 2px solid var(--color-white);
+    outline-offset: 4px;
+}
+
+/* ======================================================
+   MENU HAMBÚRGUER – PREMIUM
+====================================================== */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 7px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.menu-toggle:hover {
+    background: rgba(255, 255, 255, 0.16);
+    transform: scale(1.05);
+}
+
+.menu-toggle span {
+    width: 22px;
+    height: 2px;
+    background: var(--color-white);
+    border-radius: 4px;
+    transition: all 0.45s ease;
+}
+
+.menu-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-12px);
+}
+
+.menu-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ======================================================
+   CARD BASE
+====================================================== */
+.procedure-card {
+    height: fit-content;
+    border-radius: 22px;
+    padding: 1.9rem 2rem;
+    font-family: var(--font-primary);
+    position: relative;
+    overflow: hidden;
+
+    background: #ffffff;
+    box-shadow: 0 6px 20px rgba(228, 147, 255, 0.15);
+    cursor: pointer;
+
+    opacity: 0;
+    transform: translateY(20px) scale(0.96); /* cards entram mais pra cima */
+    animation: cardEnter 0.8s ease forwards;
+
+    transition:
+        transform 0.45s cubic-bezier(.2,.8,.2,1),
+        box-shadow 0.45s cubic-bezier(.2,.8,.2,1),
+        height 0.5s ease,
+        opacity 0.5s ease,
+        margin 0.5s ease,
+        padding 0.5s ease;
+}
+
+/* Delay progressivo */
+.procedure-card:nth-child(1) { animation-delay: 0.1s; }
+.procedure-card:nth-child(2) { animation-delay: 0.2s; }
+.procedure-card:nth-child(3) { animation-delay: 0.3s; }
+.procedure-card:nth-child(4) { animation-delay: 0.4s; }
+.procedure-card:nth-child(5) { animation-delay: 0.5s; }
+.procedure-card:nth-child(6) { animation-delay: 0.6s; }
+.procedure-card:nth-child(7) { animation-delay: 0.7s; }
+
+@keyframes cardEnter {
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* ======================================================
+   HOVER
+====================================================== */
+.procedure-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(228, 147, 255, 0.25);
+}
+
+/* ======================================================
+   LINHA DECORATIVA
+====================================================== */
+.procedure-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(90deg, #E5CBD6, #F3E8EE);
+}
+
+/* SUMMARY COM ÍCONE À DIREITA */
+.procedure-card summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; /* ícone à direita */
+    align-items: center;             /* centraliza verticalmente */
+    text-align: left;                /* texto fica alinhado à esquerda */
+    gap: 0.5rem;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2E2433;
+}
+
+
+.procedure-card summary span:first-child {
+    font-family: 'Playfair Display', serif;
+}
+
+.procedure-card summary::-webkit-details-marker {
+    display: none;
+}
+
+/* ======================================================
+   ÍCONE
+====================================================== */
+.procedure-card .icon {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--color-accent);
+    transition: transform 0.4s ease;
+}
+
+/* ======================================================
+   TEXTO (ANIMAÇÃO AO ABRIR)
+====================================================== */
+.procedure-card p {
+    max-height: 0;
+    overflow: hidden;
+
+    margin-top: 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #5A4D63;
+
+    transition:
+        max-height 0.6s cubic-bezier(0.19, 1, 0.22, 1),
+        opacity 0.4s ease,
+        margin-top 0.4s ease;
+
+    opacity: 0;
+}
+
+/* ======================================================
+   ESTADO ABERTO
+====================================================== */
+.procedure-card[open] {
+    background: linear-gradient(180deg, #ffffff, #F3E8EE);
+}
+
+.procedure-card[open] p {
+    max-height: 500px; /* suficiente para o maior texto */
+    opacity: 1;
+    margin-top: 1rem;
+}
+
+.procedure-card[open] .icon {
+    transform: rotate(45deg);
+}
+
+/* ======================================================
+   SCROLL REVEAL
+====================================================== */
+.procedure-card.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+
+/* ======================================================
+   BOTÃO “VEJA MAIS / MENOS”
+====================================================== */
+.load-more {
+    display: block;
+    margin: 2rem auto 0;
+    padding: 0.8rem 2rem;
+    background: var(--color-accent);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.load-more:hover {
+    background: #BF00FF;
+}
+
+/* ======================================================
+   OCULTAR CARDS (para iOS / scroll reveal)
+====================================================== */
+.procedure-card.hidden {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+}
+
+
+/* Setas */
+.arrow {
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #E493FF;
+  transition: color 0.3s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.arrow:hover {
+  color: #B267CC;
+}
+
+.left-arrow {
+  left: 2rem;
+}
+
+.right-arrow {
+  right: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,102 @@
+/* ======================================================
+   AGENDAMENTO - ESTILO ARAUJO BEAUTY
+====================================================== */
+
+/* Container principal */
+.agendamento-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(228, 147, 255, 0.2);
+}
+
+/* Título da página */
+.agendamento-title {
+    color: #E493FF;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+/* Formulário */
+.agendamento-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.form-input,
+.form-select {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.form-input:focus,
+.form-select:focus {
+    border-color: #E493FF;
+    box-shadow: 0 0 6px rgba(228, 147, 255, 0.4);
+    outline: none;
+}
+
+/* Botão de agendar */
+.btn-agendar {
+    padding: 12px;
+    background-color: #E493FF;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 1rem;
+}
+
+.btn-agendar:hover {
+    background-color: #d77ae0;
+}
+
+/* Mensagem de feedback */
+.agendamento-msg {
+    margin-top: 15px;
+    font-weight: bold;
+    color: green;
+    text-align: center;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .agendamento-container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .agendamento-title {
+        font-size: 1.7rem;
+    }
+
+    .form-input,
+    .form-select {
+        font-size: 0.95rem;
+    }
+
+    .btn-agendar {
+        font-size: 0.95rem;
+    }
+}

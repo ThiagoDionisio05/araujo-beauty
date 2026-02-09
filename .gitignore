@@ -1,0 +1,10 @@
+# Arquivos sensíveis
+config/database.php
+
+# Logs e temporários
+*.log
+*.tmp
+
+# Sistema
+.DS_Store
+Thumbs.db
