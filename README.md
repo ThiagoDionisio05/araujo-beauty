@@ -1,9 +1,10 @@
 # Araujo Beauty 💜
 
-Sistema web desenvolvido para gerenciamento de agendamentos e autenticação de usuários
+Sistema web desenvolvido para o gerenciamento de agendamentos e autenticação de usuários
 em um estúdio de estética.
 
-O projeto conta com controle de acesso por perfil, área administrativa e integração com banco de dados MySQL.
+O projeto oferece uma solução prática e segura para o dia a dia do negócio, contando com
+controle de acesso por perfil, área administrativa e integração com banco de dados MySQL.
 
 ---
 
@@ -16,6 +17,18 @@ O projeto conta com controle de acesso por perfil, área administrativa e integr
 - MySQL
 - FullCalendar (agenda administrativa)
 - Font Awesome
+
+---
+
+## ✨ Funcionalidades
+
+- Login e cadastro de usuários
+- Autenticação segura com controle de sessão
+- Controle de acesso por perfil (admin / cliente)
+- Agendamento de horários
+- Dashboard administrativo
+- Interface responsiva e moderna
+- Animações suaves com CSS e JavaScript
 
 ---
 
