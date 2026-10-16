@@ -35,7 +35,7 @@ controle de acesso por perfil, área administrativa e integração com banco de 
 ## 📂 Estrutura do Projeto
 
 ```text
-ISABELLE/
+araujo-beauty/
 │
 ├── agendamento/
 │   ├── index.php
